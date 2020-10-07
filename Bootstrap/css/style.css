@@ -1,0 +1,33 @@
+.navbar-nav {
+    border-bottom: solid 1px #dbdbdb !important; 
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.navbar-nav li a {
+    color: #07c0f8 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #ff0000 !important;
+    border-bottom: solid 2px #FD3A13;
+    padding-bottom: 3px;
+}
+
+.time-posted {
+    color: #ff0000 !important;
+    font-size: 0.80rem;
+    font-weight: bold;
+}
+
+.card-title {
+    color: #07c0f8 !important;
+}
+
+.flex {
+    display: flex;
+}
+
+.card img {
+    height: 200px;
+}
