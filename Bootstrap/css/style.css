@@ -4,6 +4,10 @@
     padding-bottom: 8px;
 }
 
+.navbar-expand-lg {
+    padding-bottom: 0px;
+}
+
 .navbar-nav li a {
     color: #07c0f8 !important;
 }
