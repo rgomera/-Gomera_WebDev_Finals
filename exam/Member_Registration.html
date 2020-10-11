@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Member Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/custom2.css"/>
+</head>
+<body>
+    <div>
+        <div class="form-descript">
+            <h1>Member Registration</h1>
+        </div>
+        <br/>
+        <hr width="500px"/>
+        <br/>
+        <div class="container">
+           
+            <form onsubmit="submitMessagee()" id="form" action="">
+                <div id="error-message"></div>
+                <div class="flex-container">
+                    <div>
+                        <div>
+                            <label for="txtUsername">Username:</label>
+                        </div>
+                        <div>
+                            <label for="fldEmail">Email:</label>
+                        </div>
+                        <div>
+                            <label for="fldPassword">Password:</label>
+                        </div>
+                        <div>
+                            <label for="txtFname">First Name:</label>
+                        </div>
+                        <div>
+                            <label for="txtLname">Last Name:</label>
+                        </div>
+                        <div>
+                            <label for="radioGender">Gender:</label>
+                        </div>
+                        <div>
+                            <label for="drpCountry">Country:</label>
+                        </div>
+                        <div>
+                            <label for="pickerBdate">Birth Date:</label>
+                        </div>
+                        <div>
+                            <label for="fldTel">Telephone #:</label>
+                        </div>
+                        <div>
+                            <label for="textDname">Display Name:</label>
+                        </div>
+
+                        <div class="agreement">
+                            <input type="checkbox" id="chkboxAgreement" name="chkboxAgreement" value="I agree to the Terms of Service and Privacy Policy" required>    
+                            <label for="chkboxAgreement">I agree to the <em>Terms of Service</em> and <em>Privacy Policy</em></label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="text" id="txtUsername" name="txtUsername" required>
+                            <div id="username-em" class="error-message"></div>
+                        </div>
+                        <div>
+                            <input type="email" id="fldEmail" name="fldEmail" placeholder="email@address.com" required>
+                        </div>
+                        <div>
+                            <input type="password" id="fldPassword" name="fldPassword" required>
+                            <div id="password-em" class="error-message"></div>
+                        </div>
+                        <div>
+                            <input type="text" id="txtFname" name="txtFname" required>
+                            <div id="fname-em" class="error-message"></div>
+                        </div>
+                        <div>
+                            <input type="text" id="txtLname" name="txtLname" required>
+                            <div id="lname-em" class="error-message"></div>    
+                        </div>
+                        <div>
+                            <label for="radioGender">Male</label>
+                            <input type="radio" id="radioGender" name="radioGender" value="Male" required> 
+                            <label for="radioGender">Female</label>   
+                            <input type="radio" id="radioGender" name="radioGender" value="Female" required> 
+                        </div>
+                        <div>
+                            <select name="drpCountry" id="drpCountry" >
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Canada">Philippines</option>
+                                <option value="Germany">Germany</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Australia">Australia</option>
+                                <option value="United States">United States</option>
+                                <option value="Norway">Norway</option>
+                                <option value="France">France</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="date" id="pickerBdate" name="pickerBdate" required>
+                        </div>
+                        <div>
+                            <input type="tel" id="fldTel" name="fldTel" placeholder="(xxx)-xxx-xxxx" required/>
+                            <div id="telnum-em" class="error-message"></div>      
+                        </div>
+                        <div>
+                            <input type="text" id="textDname" name="textDname" required>
+                            <div id="dname-em" class="error-message"></div>     
+                        </div>
+
+                        <div class="button-container">
+                            <button class="reset" type="reset" id="btnReset">Reset</button>
+                            <button class="create" type="submit" id="btnCreate">Create Account</button>
+                            <a href="Modified_RealEstate.html" target="_self" class="back-to-site" type="submit" id="btnCreate">Back to Site</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <br/>
+        <hr width="500px"/>
+    </div>
+    
+    <script src="js/custom2.js"></script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <title>Properties Offer</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <!-- icon css v4.7 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+  </head>
+  <body>
+     <header>
+        <nav class="style-navbar navbar navbar-expand-lg navbar-light">
+            <a class="style-brand-flex navbar-brand" href="Modified_RealEstate.html" target="_self">
+                <img src="assets/images/Logo.png" width="100" height="80" class="style-logo d-inline-block align-top" alt="" loading="lazy">
+                <span class="style-Logo-title">Modified Real Estate</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <!-- Home -->
+                <li class="nav-item active">
+                  <a class="nav-link" href="Modified_RealEstate.html" target="_self">Home</a>
+                </li>
+    
+                <!-- Properties Offer Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="style-navlink nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Properties Offer
+                  </a>
+                  <div class="style-dropdown-menu dropdown-menu">
+                    <a class="dropdown-item" href="All_properties.html" target="_self">All Properties</a>
+                    <a class="dropdown-item" href="Rent_properties.html" target="_self">Rent Properties</a>
+                    <a class="dropdown-item" href="Featured_properties.html" target="_self">Featured Properties</a>
+                  </div>
+                </li>
+                
+                <!-- About dropdown -->
+                <li class="nav-item dropdown">
+                <a class="style-navlink nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="style-dropdown-menu dropdown-menu">
+                    <a class="dropdown-item" href="about_company.html">Our Company</a>
+                    <a class="dropdown-item" href="About_Testimonials.html">Client Testimonials</a>
+                </div>
+                </li>   
+    
+                <!-- Contact Us -->
+                <li class="nav-item">
+                    <a class="style-navlink nav-link" href="Contact_us.html">Contact Us</a>
+                </li>
+    
+                <!-- More dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="style-navlink nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="style-dropdown-menu style-more dropdown-menu">
+                        <a class="dropdown-item" href="Member_Registration.html">Membership Registration</a>
+                        <a class="dropdown-item" href="Admin_login.html">Admin Login</a>
+                        <a class="dropdown-item" href="https://rgomera.github.io/Gomera_WebDev_Midterm/exam/part2b/Gomera_portfolio.html">My Portfolio</a>
+                    </div>
+                </li>  
+              </ul>
+            </div>
+          </nav>
+     </header>
+
+    <!-- Properties Offer Tabs -->
+     <div class="container">
+         <h1 class="tabs-title section-fsize-M">Properties Offer</h1>
+        <ul class="style-nav-tabs nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="style-navlink nav-link" id="allProperties-tab" data-toggle="tab" href="#allProperties">All Properties</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="style-navlink nav-link" id="rentProperties-tab" data-toggle="tab" href="#rentProperties" role="tab">Rent Properties</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="style-navlink nav-link active" id="featuredProperties-tab" data-toggle="tab" href="#featuredProperties">Featured Properties</a>
+            </li>
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a class="price-range-dd style-navlink nav-link dropdown-toggle" id="priceRange-tab" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown">
+                      Price Range
+                    </a>
+                  
+                    <div class="style-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="style-dropdown-menu dropdown-item" href="#">&lt;450K</a>
+                      <a class="style-dropdown-menu dropdown-item" href="#">450K - 1.7M</a>
+                      <a class="style-dropdown-menu dropdown-item" href="#">1.7M - 3M</a>
+                      <a class="style-dropdown-menu dropdown-item" href="#">3M - 4.5M</a>
+                      <a class="style-dropdown-menu dropdown-item" href="#">4.5M - 6M</a>
+                      <a class="style-dropdown-menu dropdown-item" href="#">6M - 9M</a>
+                      <a class="style-dropdown-menu dropdown-item" href="#">9M - 20M</a>
+                    </div>
+                </div>
+
+                <li class="nav-item search-item">
+                    <div class="input-group input-group-sm mb-3">
+                        <input placeholder="Search:" type="search" class="style-search-properties form-control">
+                        <div class="input-group-prepend">
+                            <button class="btn input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </li>
+            </li>
+        </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- All properties TAB  -->
+            <div class="style-tab-content tab-pane fade" id="allProperties" role="tabpanel">
+                <!--CARD ROW_1-->
+                <div class="card-row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$6,146,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$7,246,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$8,346,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CARD ROW_2-->
+                <div class="card-row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$9,446,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$10,546,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$11,646,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--CARD ROW_3-->
+                 <div class="card-row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$12,746,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$1,846,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$2,946,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CARD ROW_4-->
+                <div class="card-row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$3,146,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$4,146,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_AllProperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$5,146,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RENT PROPERTIES -->
+            <div class="tab-pane fade" id="rentProperties">
+            <div class="style-tab-content tab-pane fade show active" id="allProperties" role="tabpanel">
+                <!--CARD ROW_1-->
+                <div class="card-row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$6,146,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$7,246,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$8,346,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--CARD ROW_2-->
+                <div class="card-row">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$9,446,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$10,546,000</span>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/images/tp7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                          <span class="card-price">$11,646,000</span>
+                        </div>
+                    </div>
+                </div>
+                    <!--CARD ROW_3-->
+                    <div class="card-row">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                              <span class="card-price">$12,746,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$1,846,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$2,946,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD ROW_4-->
+                    <div class="card-row">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$3,146,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$4,146,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp12.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Detail_Rentproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                            <span class="card-price">$5,146,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FEATURED PROPERTIES -->
+            <div class="tab-pane fade show active" id="featuredProperties">
+                <div class="style-tab-content tab-pane fade show active" id="allProperties" role="tabpanel">
+                    <!--CARD ROW_1-->
+                    <div class="card-row">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                                <span class="card-price">$6,146,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                                <span class="card-price">$7,246,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                              <span class="card-price">$8,346,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD ROW_2-->
+                    <div class="card-row">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>ton>
+                              <span class="card-price">$9,446,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp12.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                              <span class="card-price">$10,546,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                             <span class="card-price">$11,646,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD ROW_3-->
+                    <div class="card-row">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                              <span class="card-price">$12,746,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                              <span class="card-price">$1,846,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp9.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a> 
+                             <span class="card-price">$2,946,000</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--CARD ROW_4-->
+                    <div class="card-row">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp10.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                              <span class="card-price">$3,146,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a> 
+                              <span class="card-price">$4,146,000</span>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/tp1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <a href="Details_Featuredproperties.html" class="card-btn btn btn-primary" type="button">Details</a>
+                              <span class="card-price">$5,146,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <nav class="float-right pagination">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-chevron-left"></i></a></a>
+                  </li>
+                  <li class="page-item"><a class="style-navlink  page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="style-navlink page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="style-navlink page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="style-navlink page-link" href="#"><i class="fa fa-chevron-right"></i></a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+     </div>
+
+    <!-- Get Notified -->
+    <section class="container"> 
+      <div class="get-notified">
+        <div>
+          <h1 class="get-notified-title section-fsize-M ">Get Notified</h1>
+          <h1 class="get-notified-title section-fsize-M ">For New Properties</h1>
+          <p class="get-notified-parag">Always get updated for more new properties to come. Be the first one to get the newest properties.</p>
+        </div>
+        <div>
+          <input placeholder="Email:" type="text">
+          <button  class="btn btn-primary" type="button"> Get Notified</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="contact-us-footer">
+        <div class="contact-us-flex container">
+          <div>
+            <h1 class="contact-us-title section-fsize-M">Contact Us</h1>
+            <div>Address: Km11, Sasa, Bayview, Davao City</div>
+            <div>Z-Code: 8000</div>
+            <div>Telephone: 1-800-123-4937</div>
+            <div>Email: Modified_realestate@gmail.com</div>
+          </div>
+
+          <div class="links-icon">
+            <div>
+              <h1 class="contact-us-title section-fsize-M">Follow us</h1>
+            </div>
+            <div class="icons">
+              <div><i class="fa fa-facebook-official fa-2x"><a href="#"></a></i></div>
+              <div><i class="fa fa-twitter-square fa-2x"><a href="#"></a></i></div>
+              <div><i class="fa fa-envelope fa-2x"></i><a href="#"></a></div>
+              <div><i class="fa fa-linkedin-square fa-2x"><a href="#"></a></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="copyright-text text-center">&copy; 2020 Modified Real Estate by Rey mond S. Gomera - Mobile Responsive Website</div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
