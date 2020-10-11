@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+
+body {
+    /* color: #F5F5F5 !important    ; */
+    background-color: #222 !important;
+    color: #F5F5F5;
+}
+
+.header-size {
+    font-size: .95rem;
+}
+
+.header-size-bold {
+    font-weight: bold;
+}
+
+.style-navbar {
+    margin: 15px 0px 10px 0px;
+}
+
+.navbar-dark {
+    background-color: #222 !important;
+}
+
+i {
+    color: #F5F5F5 !important;
+}
+
+.nav-link {
+    color: #F5F5F5 !important;
+}
+
+.style-dropdown-menu {
+    border-radius: 0px;
+    position: absolute;
+    left: -100%;
+    font-size: 0.90rem;
+}
+
+.style-dropdown-menu a:hover {
+    background-color: #222;
+    color: #F5F5F5;
+}
+
+.post-container {
+    width: 860px;
+}
+
+.news-feed-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container {
+    width: 735px;
+}
+
+.text-area-post {
+    max-width: 700px;
+    border-radius: 0px;
+    height: 150px !important;
+}
+
+.post-icons {
+    position: relative;
+    margin: 15px;
+}
+
+.post-icons i:nth-child(3){
+    margin-right: 490px;
+}
+
+.post-icons i {
+   margin: 0px 7px;
+}
+
+.post-icons i:hover {
+    cursor: pointer;
+}
+
+.style-btn {
+    position: absolute;
+    font-size: 0.80rem;
+    color: #F5F5F5;
+    border: solid 1px #F5F5F5;
+    background-color: transparent;
+}
+
+.style-btn:hover {
+    color: #222;
+    background-color: #F5F5F5;
+}
+
+.nav-tabs-container {
+    width: 750px;
+    margin: 50px auto;
+}
+
+.nav-link {
+    background-color: #222 !important;
+}
+
+.card {
+    border: none;
+    width: 100% !important;
+}
+
+.card-body {
+    color: #222 !important;
+}
+
+.heart-icon, .share-icon, .dot-icon {
+    cursor: pointer;
+    color: #222 !important;
+}
+
+.dot-icon {
+    float: right;
+    cursor: pointer;
+}
+
+.card-item {
+    margin: 40px 20px;
+}
+
+.card-text {
+    margin: 20px 0px;
+}
+
+.profile-pic {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.style-badge {
+    color: #F5F5F5;
+    padding: 8px;
+    background-color: #222;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.post-options div span {
+    margin: 0px 5px;
+}
+
+.comment:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    font-size: 0.70rem;
+    text-align: center;
+    color: #F5F5F5;
+    background-color: rgba(245, 245, 245, 0.10);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+}
+
